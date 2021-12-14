@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="loguserrContext" prefHeight="381.0" prefWidth="704.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.WindowOneeController">
+   <children>
+      <ImageView fitHeight="420.0" fitWidth="714.0" layoutX="-1.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asserts/Capture01.JPG" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="userName" accessibleRole="BUTTON" alignment="CENTER" focusColor="#686666" layoutX="229.0" layoutY="170.0" opacity="0.79" prefHeight="49.0" prefWidth="256.0" promptText=" user name" style="-fx-background-color: #ffffff;" unFocusColor="#3c3939">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="userPassword" accessibleRole="BUTTON" alignment="CENTER" focusColor="#686666" layoutX="228.0" layoutY="232.0" opacity="0.81" prefHeight="49.0" prefWidth="256.0" promptText="Password" style="-fx-background-color: #ffffff;" unFocusColor="#3c3939">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXTextField>
+      <Button alignment="CENTER" layoutX="266.0" layoutY="299.0" mnemonicParsing="false" onAction="#AddminDashBoard" prefHeight="35.0" prefWidth="181.0" text="Login">
+         <font>
+            <Font name="Linux Biolinum G Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button layoutX="657.0" layoutY="350.0" mnemonicParsing="false" onAction="#DashBoardForm" style="-fx-background-color: #00fa9a;" text="Back">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <InnerShadow />
+         </effect>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

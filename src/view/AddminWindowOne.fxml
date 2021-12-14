@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="AdminOneContext" prefHeight="381.0" prefWidth="704.0" style="-fx-background-color: #dcdcdc;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddminWindowOneController">
+   <children>
+      <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="39.0" prefWidth="200.0" text="Edit Room &amp; Meals Deteils">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button alignment="TOP_LEFT" layoutY="39.0" mnemonicParsing="false" onAction="#openHotelInvoice" prefHeight="39.0" prefWidth="200.0" text="Hotel Invoice">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="2.0" layoutY="339.0" mnemonicParsing="false" onAction="#OpenWindowOnee" prefHeight="39.0" prefWidth="76.0" style="-fx-background-color: #dc143c;" text="Log Out">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <InnerShadow />
+         </effect>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <AnchorPane layoutX="200.0" prefHeight="381.0" prefWidth="504.0" style="-fx-background-color: #dcdcdc;">
+         <children>
+            <Label layoutX="6.0" layoutY="6.0" prefHeight="39.0" prefWidth="181.0" text="Edit Rooms Deteils">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="6.0" layoutY="191.0" prefHeight="39.0" prefWidth="181.0" text="Meals Deteils">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="54.0" layoutY="83.0" text="Add Room Type">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="54.0" layoutY="128.0" text="Delete Room">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="54.0" layoutY="257.0" text="Add MealsType">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="54.0" layoutY="302.0" text="Delete Meals">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <TextField layoutX="187.0" layoutY="79.0" text=" ">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </TextField>
+            <TextField layoutX="187.0" layoutY="298.0" text=" ">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </TextField>
+            <TextField layoutX="187.0" layoutY="253.0" text=" ">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </TextField>
+            <TextField layoutX="187.0" layoutY="124.0" text=" ">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </TextField>
+            <Button layoutX="371.0" layoutY="79.0" mnemonicParsing="false" onAction="#AddRooms" style="-fx-background-color: #dc143c;" text="Add">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="371.0" layoutY="124.0" mnemonicParsing="false" onAction="#DeleteRoom" opacity="0.99" style="-fx-background-color: #00ff00;" text="Delete">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="371.0" layoutY="253.0" mnemonicParsing="false" onAction="#AddMeals" style="-fx-background-color: #dc143c;" text="Add">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="371.0" layoutY="298.0" mnemonicParsing="false" onAction="#DeleteMeals" style="-fx-background-color: #00ff00;" text="Delete">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Button alignment="TOP_LEFT" layoutY="78.0" mnemonicParsing="false" onAction="#openIncome" prefHeight="39.0" prefWidth="200.0" text="Income Report">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="200.0" fitWidth="200.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asserts/icon.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="55.0" layoutY="313.0" prefHeight="25.0" prefWidth="110.0" text="Hi, Ravidu">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <ImageView fitHeight="25.0" fitWidth="40.0" layoutX="3.0" layoutY="314.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asserts/th.jpg" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>
